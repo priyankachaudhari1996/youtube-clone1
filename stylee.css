@@ -1,0 +1,122 @@
+/*              Side Bar CSS */
+
+
+*{
+ margin: 0;
+ padding: 0;
+}
+
+:root{
+
+    --Colordark : #0F0F0F;
+    --ColorHover :#E2E2E2;
+    --ColorText: #707070;
+}
+
+
+#container{
+    width:100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 300px auto;
+    overflow: hidden;
+}
+
+#side-bar{
+    box-sizing: border-box;
+    /* background-color: yellow; */
+    padding: 0px 20px 20px 20px;
+    overflow-y: scroll;
+}
+/* width */
+#side-bar::-webkit-scrollbar, #content-body::-webkit-scrollbar{
+  width: 6px;
+}
+
+/* Track */
+#side-bar::-webkit-scrollbar-track,#content-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+#side-bar::-webkit-scrollbar-thumb,#content-body::-webkit-scrollbar-thumb  {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+#side-bar::-webkit-scrollbar-thumb:hover,#content-body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+#content-body{
+    box-sizing: border-box;
+    /* background-color: rgb(228, 26, 60); */
+    overflow: scroll;
+}
+
+#utube_logo{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    /* padding-left: 20px; */
+    
+    align-items: center;
+    /* background-color: pink; */
+}
+#menu_bar{
+    /* background-color: aqua; */
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#menu_bar:hover{
+    background-color: var(--ColorHover);
+}
+#utube_logo div{
+    /* background-color: brown; */
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home,#You ,#Subscriptions,#more_utube,#copyright{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    /* background-color: aliceblue; */
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--ColorHover);
+}
+.sb-div{
+    width: 200px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding:7px 5px 7px 5px;
+    /* background-color: antiquewhite; */
+    border-radius: 10px;
+}
+.sb-div span{
+    font-size: 28px;
+}
+.sb-div:hover{
+    background-color: var(--ColorHover);
+}
+.sb-div span img{
+    width: 30px;
+    height: 30px;
+}
+.first-sb-div p{
+    
+}
